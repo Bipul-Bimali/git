@@ -1,0 +1,22 @@
+$yellow: yellow;
+$red: red;
+@mixin bord(){
+border:  1px dashed black;
+padding: 30px;
+}
+
+// Your existing SASS styles can go here
+
+button {
+  background-color: $red;
+  text-transform: uppercase;
+  &::after {
+    content: attr(name);
+    text-transform: uppercase;
+  }
+}
+
+#contactForm {
+  @include bord();
+}
+

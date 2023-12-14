@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seahorse</title>
+    <link rel="stylesheet" href="ContactUsAsssign.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/scss.css">
+    <title>Species Website</title>
+    <script src="../../js/navbar.js"></script>
+    
+    <script src="../../js/media.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/javascript.js" ></script>
 </head>
 <body>
-    <header><div id="hiii">Sea&NonBreakingSpace;Horse</div></header>
-    <nav>
-        <li class="navigation"><a href="http://">About</a></li>
-        <li class="navigation"><a href="">Gallery</a></li>
-        <li class="navigation"><a href="">EXTRA</a></li>
+    <header>
+        <h1>Species Website</h1>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li class="nav" id="AboutNav" ><a href="#about">About</a></li>
+            <li class="nav" id="GalleryNav"><a href="#gallery">Gallery</a></li>
+            <li class="nav" id="World-countNav"><a href="#world-count">World Count</a></li>
+            <li class="nav" id="ContactNav"><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
+            <div class="fixed-header" id="movableHeader">
+                Welcome to the website  
+            </div>  
+        </ul>
+   </nav>
     <main>
-        <!-- <div class="welcome">Welcome to our website</div> -->
         <section id="about">
             <h3>Overview</h3>
             <p>Longsnout are the sea creatures. They  are known as Hippocampus reidi are found in near seagrasses.
@@ -29,20 +46,7 @@
                  Atlantic, from Carolina in USA to Santa Catarina in Brazil. They live to the depth of 55 meters/180 
                  feet in the Ocean.The diet of the longsnout seahorse consists of the diet like ghost shrimp, grass
                  shrimp, opossum shrip and other small marien crustaceans. </p>
-                 <table>
-                    <th>Category</th>
-                    <th>Statistics</th>
-                    <Tbody>
-                        <tr>
-                            <td>WorldCount</td>
-                            <td>4500</td>
-                        </tr>
-                        <tr>
-                            <td>Habitat</td>
-                            <td>Rivers</td>
-                        </tr>
-                    </Tbody>
-                </table>
+
             <h3>Reproduction</h3>
             <p>Like other seahorse, longsnout seahorse have an interesting reproductive strategy. Female lays eggs into
                  specialized pouches on the male’s abdomens, and the male incubate them until they hatch. In there species
@@ -56,39 +60,143 @@
 
         </section>
         <section id="gallery">
-            <div id="images">
+            <h1>Gallery</h1>
+            <div class="image-gallery">
                 <figure>
-                    <img src="images/957aea3f609f6570153b2fe7969c898c.jpg" alt="" class="seahorse">
+                    <img src="images/957aea3f609f6570153b2fe7969c898c.jpg" alt="A picture  of seahorse" class="seahorse">
+                    <figcaption class="img">a white spotted seahorse from <a href="https://unsplash.com/">Unsplash</a></figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bfbf4494c602c41d694b1fc1cecc04e7.jpg" alt="" class="seahorse">
+                    <img src="images/bfbf4494c602c41d694b1fc1cecc04e7.jpg" alt="A picture  of seahorse" class="seahorse">
+                    <figcaption class="img">A yellow Seahorse from <a href="https://unsplash.com/">Unsplash</a></figcaption>
                 </figure>
                 <figure>
-                    <img src="images/gettyimages-55909034-612x612.jpg" alt="" class="seahorse">
+                    <img src="images/gettyimages-55909034-612x612.jpg" alt="A picture  of seahorse in pair" class="seahorse">
+                    <figcaption class="img">A pair of yellow seahorse from <a href="https://unsplash.com/">Unsplash</a></figcaption>
                 </figure>
                 <figure>
-                    <img src="images/gettyimages-687143298-612x612.jpg" alt="" class="seahorse">
+                    <img src="images/gettyimages-687143298-612x612.jpg" alt="Seahorse" class="seahorse">
+                    <figcaption class="img">Seahorse Behind a spyringia stem from <a href="https://unsplash.com/">Unsplash</a></figcaption>
                 </figure>
                 <figure>
-                    <img src="images/gettyimages-90063109-612x612.jpg" alt="" class="seahorse">
+                    <img src="images/gettyimages-90063109-612x612.jpg" alt="Image of Seahorse " class="seahorse">
+                    <figcaption class="img">Zoomed view of Seahorse from <a href="https://unsplash.com/">Unsplash</a></figcaption>
                 </figure>
+                <!-- Adding images here -->
             </div>
-            <div id="video">
-                <figure>
-                    <video src="video/Longsnout_Seahorse(720p).mp4" controls class="class"></video>
+            <div class="video-gallery">
+                <figure class="media">
+                    <video src="video/Longsnout_Seahorse(720p).mp4" controls muted autoplay class="class"></video>
+                    <figcaption>documenting longsnout seahorse in its natural habitat</figcaption>
                 </figure>
-                <figure>
+                <figure class="media">
                     <video src="video/WATCH__Longsnout_seahorse_pairs_remain_together_for_life___Oceana(1080p) (1).mp4" controls class="class"></video>
+                    <figcaption>informative video on different seahorses</figcaption>
                 </figure>
+                <!-- Adding  videos here -->
             </div>
         </section>
-        <section id="EXTRA">
-
+        <section id="world-count">
+            <h1>World Count</h1>
+            <table>
+                <th>Category</th>
+                <th>Statistics</th>
+                <Tbody>
+                    <tr>
+                        <td>Population Size</td>
+                        <td>450000</td>
+                    </tr>
+                    <tr>
+                        <td>Habitat</td>
+                        <td>Eastern Atlantic Ocean</td>
+                    </tr>
+                    <tr>
+                        <td>Length</td>
+                        <td>12cm to 21.5 cm</td>
+                    </tr>
+                </Tbody>
+            </table>
 
         </section>
     </main>
-    <footer>
-        &copy;
-    </footer>
+    <script>
+const aboutnav = document.getElementById("AboutNav");
+const gallerynav = document.getElementById("GalleryNav");
+const world_countnav = document.getElementById("World-countNav");
+aboutnav.addEventListener('click',function (){
+document.getElementById("about").style.display="Block";
+document.getElementById("gallery").style.display="None";
+document.getElementById("world-count").style.display="None";
+        });
+gallerynav.addEventListener('click',function (){
+    document.getElementById("gallery").style.display="Block";
+    document.getElementById("about").style.display="None";
+    document.getElementById("world-count").style.display="None";
+});
+world_countnav.addEventListener('click',function (){
+    document.getElementById("world-count").style.display="Block";
+    document.getElementById("gallery").style.display="None";
+    document.getElementById("about").style.display="None";
+});
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.navbar').addClass('fixed');
+        } else {
+            $('.navbar').removeClass('fixed');
+        }
+    });
+});
+
+
+$(document).ready(function() {
+    // Set Basic variables
+    var slides = $('.media');
+    var slideIndex = 0;
+    
+    // Show the first slide
+    $(slides[slideIndex]).show();
+    
+    // Set interval to change slides
+    setInterval(function() {
+      // Hide the current slide
+      $(slides[slideIndex]).fadeOut();
+      
+      // Increment index or reset to 0
+     slideIndex = (slideIndex + 1) % slides.length;
+
+     console.log(slideIndex);
+
+      
+      // Show the next slide
+      $(slides[slideIndex]).delay(450).fadeIn();
+    }, 4000); 
+  });
+
+  $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 110) {
+            $('#navbar').addClass('fixed');
+        } else {
+            $('#navbar').removeClass('fixed');
+        }
+    });
+});
+
+
+$(document).mouseup(function(e) 
+{
+    var container = $("#gallery");
+    var navbar = $("#navbar");
+    var gallery =!container.is(e.target) && container.has(e.target).length === 0;
+    var nav =!navbar.is(e.target) && navbar.has(e.target).length === 0;
+    if (gallery && nav) 
+    {
+        $(".media").show();
+    }
+});
+
+    </script>
+    </main>
 </body>
-</html>
