@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="js/contact.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/formstyle.css">
+  <script src=" https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <header>
+    <h1 style="text-align:  center;">Contact Us</h1>
+    <nav style="background-color: rgb(27, 17, 74);border-radius: 5px; height: 30px; margin: auto 0 auto 0;" >
+        <a class="navigation" href="index.html#about">About</a>
+        <a class="navigation" href="index.html#gallery">Gallery</a>
+        <a class="navigation" href="index.html#WorldCount">WorldCount</a>
+    </nav>
+</header>
+    <hr>
+    <div class="form">
+        <form id="contact" onsubmit="sendEmail()" action="https://formspree.io/f/xvojepvo" method="post" >
+            <label for="Fname">First Name</label>
+            <input onchange="fname_validation()" type="text" required id="Fname" name="firstname"><br>
+            <label for="Lname">Last Name</label>
+            <input type="text" onchange="lname_validation()" required id="Lname" name="lastname"><br>
+
+            <label for="email">Email</label>
+            <input type="email" onchange="email_validation()" required id="email" name="email_address"><br>
+
+            <label for="date">Date</label>
+            <input type="date" onchange="date_validation()" required id="date" name="Date"><br>
+            <label for="phone">Phone</label>
+            <input onchange="phone_validation()" type="number" required maxlength="10" minlength="10"  id="phone" name="number"><br>    
+            <label for="message">Message</label><br>
+            <textarea onchange="message_validation()" required rows="4" cols="50"  id="message" name="message"></textarea>
+            <hr>
+            <button type="button" onclick="Validate();" >submit</button>
+    </form>
+</div>
+</div>
+</body>
+</html>

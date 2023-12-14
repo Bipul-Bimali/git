@@ -1,0 +1,13 @@
+button {
+  background-color: red;
+  text-transform: uppercase;
+}
+button::after {
+  content: attr(name);
+  text-transform: uppercase;
+}
+
+#contactForm {
+  border: 1px dashed black;
+  padding: 30px;
+}/*# sourceMappingURL=scss.css.map */
